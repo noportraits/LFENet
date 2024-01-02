@@ -64,6 +64,7 @@ www.xxxxxxxx
     │   ├── util.py  // save image and set random seed
     
 # Training process
+Run train.py
 train:
 
     low_left = r'Low light left view path'
@@ -82,4 +83,13 @@ val:
     val_low_frequency_left = r'low frequency left view path'
     val_low_frequency_right = r'low frequency right view path'
 # Testing process
+    Run test.py
+    parser.add_argument('--light_l', type=str, default=r"low frequency left view path")
+    parser.add_argument('--light_r', type=str, default=r"low frequency right view path")
+    parser.add_argument('--low_l', type=str, default=r"Low light left view path")
+    parser.add_argument('--low_r', type=str, default=r"Low light right view path")
+    parser.add_argument('--sava_left', type=str, default=r"save left view path")
+    parser.add_argument('--save_right', type=str, default=r"save right view path")
+    parser.add_argument('--snapshots_pth', type=str, default="../models/111.pth")
 
+    Run test_dataset_value.py to calculate SSIM and PSNR

@@ -42,8 +42,8 @@ def lowlight(config, file_name, i):
     pre_l = pre_l.squeeze(0)
     pre_r = pre_r.squeeze(0)
     print("第", i, "张", " file_name: ", file_name)
-    util.save_img(pre_l, "D:\\mydataset\\bestbignoise\\holopix\\pre\\ours\\left\\" + file_name)
-    util.save_img(pre_r, "D:\\mydataset\\bestbignoise\\holopix\\pre\\ours\\right\\" + file_name.replace("left", "right"))
+    util.save_img(pre_l, config.save_left + "\\" + file_name)
+    util.save_img(pre_r, config.save_right + "\\" + file_name.replace("left", "right"))
 
 
 if __name__ == '__main__':
@@ -53,8 +53,10 @@ if __name__ == '__main__':
         parser.add_argument('--light_r', type=str, default=r"D:\mydataset\bestbignoise\holopix\test\low_fre\low\right")
         parser.add_argument('--low_l', type=str, default=r"D:\mydataset\bestbignoise\holopix\test\normal\low\left")
         parser.add_argument('--low_r', type=str, default=r"D:\mydataset\bestbignoise\holopix\test\normal\low\right")
+        parser.add_argument('--sava_left', type=str, default=r"D:\mydataset\bestbignoise\holopix\test\normal\low\right")
+        parser.add_argument('--save_right', type=str, default=r"D:\mydataset\bestbignoise\holopix\test\normal\low\right")
         parser.add_argument('--cuda', type=str, default="0")
-        parser.add_argument('--snapshots_pth', type=str, default="../models/best_psnr_epoch_256.pth")
+        parser.add_argument('--snapshots_pth', type=str, default="../models/111.pth")
 
         config = parser.parse_args()
 

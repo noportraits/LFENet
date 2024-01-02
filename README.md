@@ -84,6 +84,7 @@ val:
     val_low_frequency_right = r'low frequency right view path'
 # Testing process
     Run test.py
+    
     parser.add_argument('--light_l', type=str, default=r"low frequency left view path")
     parser.add_argument('--light_r', type=str, default=r"low frequency right view path")
     parser.add_argument('--low_l', type=str, default=r"Low light left view path")
@@ -93,3 +94,6 @@ val:
     parser.add_argument('--snapshots_pth', type=str, default="../models/111.pth")
 
     Run test_dataset_value.py to calculate SSIM and PSNR
+    
+    path1 = r"ground truth path"
+    path2 = r"pre path"

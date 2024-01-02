@@ -6,7 +6,7 @@ from datasets import Dataset
 import matplotlib
 matplotlib.use('Agg')
 from matplotlib import pyplot as plt
-
+import os
 import torch
 import time
 from util import set_random_seed
@@ -54,7 +54,10 @@ spaloss = LossSpa().cuda()
 optimizer = torch.optim.Adam(model.parameters(), lr=lr, betas=(0.5, 0.999))
 scheduler = torch.optim.lr_scheduler.MultiStepLR(optimizer, scheduler_list, 0.5)
 
-
+save_dir = "../models"
+if not os.path.exists(save_dir):
+    os.makedirs(save_dir)
+  
 def main():
     start_epoch = 1
     start = time.time()

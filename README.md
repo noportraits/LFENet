@@ -63,6 +63,23 @@ www.xxxxxxxx
     
     │   ├── util.py  // save image and set random seed
     
-    │   ├── IEM.py
-    
+# Training process
+train:
+
+    low_left = r'Low light left view path'
+    low_right = r'Low light right view path'
+    gt_left = r'ground truth left view path'
+    gt_right = r'ground truth right view path'
+    low_frequency_left = r'low frequency left view path'
+    low_frequency_right = r'low frequency right view path'
+
+val:
+
+    val_low_left = r'Low light left view path'
+    val_low_right = r'Low light right view path'
+    val_gt_left = r'ground truth left view path'
+    val_gt_right = r'ground truth right view path'
+    val_low_frequency_left = r'low frequency left view path'
+    val_low_frequency_right = r'low frequency right view path'
+# Testing process
 

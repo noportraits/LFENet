@@ -53,7 +53,7 @@ if __name__ == '__main__':
         parser.add_argument('--light_r', type=str, default=r"D:\mydataset\bestbignoise\holopix\test\low_fre\low\right")
         parser.add_argument('--low_l', type=str, default=r"D:\mydataset\bestbignoise\holopix\test\normal\low\left")
         parser.add_argument('--low_r', type=str, default=r"D:\mydataset\bestbignoise\holopix\test\normal\low\right")
-        parser.add_argument('--sava_left', type=str, default=r"D:\mydataset\bestbignoise\holopix\test\normal\low\right")
+        parser.add_argument('--save_left', type=str, default=r"D:\mydataset\bestbignoise\holopix\test\normal\low\right")
         parser.add_argument('--save_right', type=str, default=r"D:\mydataset\bestbignoise\holopix\test\normal\low\right")
         parser.add_argument('--cuda', type=str, default="0")
         parser.add_argument('--snapshots_pth', type=str, default="../models/111.pth")

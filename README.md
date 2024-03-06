@@ -1,8 +1,4 @@
-# Contact information
 
-wechat： Qin_LeoL
-
-e-mail：1969505875@qq.com
 
 # Environment
 Python 3.10

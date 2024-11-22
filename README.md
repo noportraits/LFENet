@@ -6,7 +6,7 @@ Python 3.10
 Pytroch 2.0.1
 
 Cuda 11.8
-#Our Dataset
+# Our Dataset
 https://drive.google.com/file/d/1iyOcIvqsTnf0rriuxelXmmIkKUVlKv1A/view?usp=drive_link
 # Directory structure description
 
